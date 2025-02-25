@@ -19,34 +19,42 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
         }
 
-        .receipt-header{
+        .receipt-header {
             border-bottom: 1px dashed gray;
         }
 
-        .logo{
+        .logo {
             display: block;
             margin: 0 auto;
             height: 170px;
         }
 
-        .title{
-           text-align: center;
-           font-size: 30px;
-           font-family: Georgia, 'Times New Roman', Times, serif;
+        .title {
+            text-align: center;
+            font-size: 25px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin-bottom: 15px;
+            padding-bottom: 40px;
+            
         }
 
-        .detail{
+        span {
+            background-color: #ffe680;
+            padding: 10px;
+        }
+
+        .detail {
             display: flex;
             justify-content: space-around;
             margin: 20px 0;
             font-size: 20px;
         }
 
-        .detail-key{
+        .detail-key {
             color: gray;
         }
 
-        .detail-value{
+        .detail-value {
             font-weight: bold;
             border-bottom: 1px dashed gray;
             width: 200px;
@@ -59,11 +67,11 @@
         <div class="receipt-header">
             <img src="https://assets.collegedunia.com/public/college_data/images/logos/1720774501lohooo.png" alt="logo"
                 class="logo">
-                
+
         </div>
 
         <div class="receipt-body">
-            <h1 class="title">Payment Receipt</h1>
+            <h1 class="title"><span>Payment Receipt</span></h1>
             <div class="detail">
                 <div class="detail-key">Receipt No.</div>
                 <div class="detail-value">111</div>
@@ -89,6 +97,9 @@
                 <div class="detail-value">Online</div>
             </div>
 
+            <div class="stamp-container">
+            <img src="https://t4.ftcdn.net/jpg/10/83/32/03/360_F_1083320306_TubgmR7p12GH2ub3xRtkIiWW0erBoRps.jpg" alt="stamp" class="stamp">
+            </div>
         </div>
 
         <div class="receipt-footer">
