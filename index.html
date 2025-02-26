@@ -23,9 +23,10 @@
             border-bottom: 1px dashed gray;
         }
 
-        .receipt-body{
+        .receipt-body {
             border-bottom: 1px dashed gray;
         }
+
         .logo {
             display: block;
             margin: 0 auto;
@@ -65,27 +66,76 @@
 
         .signature {
             text-align: right;
-            margin: 40px;
+            margin: 48px;
             font-size: 20px;
             padding-top: 120px;
-           
+
         }
 
         .stamp {
             height: 120px;
-           position: absolute;
-           right: 155px;
-           bottom: 10px;
-           transform: rotate(20deg);
+            position: absolute;
+            right: 155px;
+            bottom: 10px;
+            transform: rotate(20deg);
         }
 
-        .receipt-end{
+        .receipt-end {
             font-size: 28px;
             text-align: center;
             background-color: #ffe680;
             padding: 10px;
         }
-        
+
+        @media(max-width:500px) {
+
+            .receipt-body{
+                height: 400px;
+            }
+
+            .logo {
+                height: 80px;
+            }
+
+            .title {
+                margin: 30px;
+                font-size: 18px;
+            }
+
+            .detail-key {
+                font-size: 12px;
+            }
+
+            .detail-value {
+                font-size: 12px;
+                width: 100px;
+            }
+
+            .stamp{
+                height: 60px;
+                position: absolute;
+                bottom: 160px;
+                right: 62px;
+            }
+
+            .signature{
+                position: relative;
+                bottom: 50px;
+                font-size: 12px;
+                margin-right: 20px;
+            }
+
+            .para{
+                font-size: 10px;
+                margin: 2px;
+            }
+
+            .receipt-end{
+                font-size: 15px;
+                padding: 5px;
+            }
+
+        }
     </style>
 </head>
 
@@ -103,6 +153,7 @@
                 <div class="detail-key">Receipt No.</div>
                 <div class="detail-value">111</div>
             </div>
+
 
             <div class="detail">
                 <div class="detail-key">Payment Type</div>
@@ -133,7 +184,7 @@
         </div>
 
         <div class="receipt-footer">
-            <p>This is computer generated receipt and does not required any signature</p>
+            <p class="para">This is computer generated receipt and does not required any signature</p>
             <p class="receipt-end">Thank You!</p>
         </div>
 
